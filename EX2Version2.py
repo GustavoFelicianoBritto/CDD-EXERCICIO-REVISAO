@@ -11,3 +11,4 @@ elif num % 2==1 and num <0:
 else:
     print("Número foi zero")
 
+
