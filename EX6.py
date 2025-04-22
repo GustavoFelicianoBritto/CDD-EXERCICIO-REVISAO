@@ -1,7 +1,7 @@
 peso =  float(input("Digite seu peso: "))
 altura = float(input("Digite sua altura em cm: ").replace(',','.'))
 
-imc = peso / (altura * altura)
+imc = peso /altura**2
 
 #print(f"Seu imc é {imc:.1f}")
 
@@ -15,7 +15,5 @@ elif imc >29.9 and imc <34.9:
     print(f"Seu imc é {imc:.2f} e está com obesidade grau I")
 elif imc > 34.9 and imc <39.9:
     print(f"Seu imc é {imc:.2f} e está com obesidade grau II")
-elif imc > 40.0:
-    print(f"Seu imc é {imc:.2f} e está com obesidade grau III")
 else:
-    print(f"Seu imc é {imc:.2f} e está fora da tabela de IMC")
+    print(f"Seu imc é {imc:.2f} e está com obesidade grau III")
